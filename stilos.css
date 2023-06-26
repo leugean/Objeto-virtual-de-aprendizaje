@@ -1,0 +1,125 @@
+*{
+    margin: 0;
+    padding: 0%;
+}
+body{
+    margin:0;
+  padding:0;
+  background:#f8f8f8;
+  font-family:arial, verdana, sans-serif;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+}
+.header{
+    background: #001934;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    width: 100%;
+    position: fixed;
+}
+.contenedor{
+    display: flex;
+    margin-top: 3.2em;
+}
+#navbar{
+    background: #001934;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 550px;
+    width: 25%;
+    position: fixed;
+}
+.nav-bar{
+    text-align:center;
+  }
+  #navbar ul{
+    display:flex;
+    flex-direction:column;
+    height:450px;
+    overflow-y:auto;
+    
+  }
+  
+  #navbar li{
+    border-top: 1px solid rgba(255, 255, 255, 0.3);;
+    list-style:none;
+    font-size:1em;
+    font-weight:bold;
+    padding-left:20px;
+  }
+  .nav-link{
+    display:flex;
+    padding:10px 30px;
+    text-decoration:none;
+    cursor:pointer;
+    color:#fff;
+  }
+   .nav-link:hover{
+        background: #c3dae5 ;
+    }
+#main-doc{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    margin-left: 25%;
+    width: 70%;
+}
+.wrapper{
+  display: flex;
+  flex-direction: row;
+}
+.main-section{
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+}
+.imagen{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 38%;
+  height: 400px;
+}
+.title{
+  text-align:left;
+  font-size:1.5rem;
+}
+ p{
+  margin-top:10px;
+  padding:10px;
+  text-align:justify;
+}
+@media all and (max-width:850px){
+  .contenedor{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  #navbar{
+    display: none;
+  }
+  .wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+  #main-doc{
+    width: 100%;
+  }
+  .main-section{
+    width: 90%;
+  }
+  .iframe{
+    width: 100%;
+  }
+  .evaluation{
+    width: 100%;
+  }
+}
